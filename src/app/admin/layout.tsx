@@ -2,6 +2,7 @@ import Nav, { NavLink } from "@/components/Nav";
 
 
 export const dynamic = "force-dynamic";
+
 export default function AdminLayout({
   children,
 }: Readonly<{
@@ -14,6 +15,6 @@ export default function AdminLayout({
             <NavLink href={"/admin/user"}>User</NavLink>
             <NavLink href={"/admin/order"}>Order</NavLink>
         </Nav>
-        <div className="container my-6">{children}</div>
+        <div className="container my-6 px-6">{children}</div>
     </>
 }
