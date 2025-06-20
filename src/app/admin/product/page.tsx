@@ -52,7 +52,7 @@ async function ProductsTable() {
                   <CheckCircle2 />
                 </>) : (<> 
                   <span className='sr-only'>Unavailable</span>
-                  <XCircle /> 
+                  <XCircle className='stroke-destructive' /> 
                 </>)
               }
             </TableCell>
